@@ -1,0 +1,53 @@
+            div.top ul.menu {
+                text-align: center;
+                list-style: none;
+                text-decoration: none;
+                padding-left: 0px;
+            }
+            
+            div.top li.menu {
+                display: inline;
+                text-decoration: none;
+                padding-left: 50px;
+            }
+            .sources{
+                text-align: center;
+            }
+            
+            html, body {
+                font: 16px Arial, sans-serif;
+                width: 100%;
+            }
+            
+            a {
+                color: black;
+             
+            }
+            .active {
+                color: #ffd700 ;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #ffd700  ;
+            }
+            .background{
+                            background: yellow
+           
+                    
+                        }
+            .container {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            }
+            .clearfix:after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+            }
+            .pegged {
+            float: right;
+            margin: 0px;
+            }
