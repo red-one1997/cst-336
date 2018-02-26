@@ -70,7 +70,7 @@ function getCards($user){
     $lowercase = strtolower($user); //make username lowercase for img path
     echo "<div id='userinfo'><span id='name'>$user</span>"; //username
     echo "<br/>";
-    echo "<img id='userpicture' src='img/$lowercase.jpg' title='$user' alt='$user'/></div>"; //user image
+    echo "<img id='userpicture' src='img/$user.jpg' title='$user' alt='$user'/></div>"; //user image
     $total = 0; //user score
     //get user new card until score greater than 35
     while($total < 35){
