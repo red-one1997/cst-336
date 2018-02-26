@@ -25,6 +25,8 @@
     <input type="checkbox" id="beginner" name="level" value="beginner">
             <label for="beginner"> Beginner </label>
     <br/><br/>
-    Favourite track:    <textarea id="feedback" cols="30" rows="3"></textarea><br/><br />
-    <input type="button" value="Submit Data" onclick="displayData()"/>
+    Favourite track:    <textarea id="favtrack" cols="30" rows="3"></textarea><br/><br />
+    
+    Feedback:    <textarea id="feedback" cols="30" rows="3"></textarea><br/><br />
+    <input type="button" value="Submit" onclick="displayData()"/>
   </form>
