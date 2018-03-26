@@ -4,6 +4,8 @@
         <title>Lab4 </title>
         <link href="Rules.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
     </head>
     <body>
         
@@ -71,7 +73,22 @@
         
             <?php
         
-            $bdd = new PDO("mysql:host=localhost;dbname=Lab4", 'ratlati', '');
+           
+        $connUrl = "mysql://uum8rg5he11yrr78:kcku3q1z3yz7h3wa@jlg7sfncbhyvga14.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tfp8zxtcryufohv9";
+        $hasConnUrl = !empty($connUrl);
+    
+$connParts = null;
+if ($hasConnUrl) {
+    $connParts = parse_url($connUrl);
+}
+
+//var_dump($hasConnUrl);
+$host = $hasConnUrl ? $connParts['host'] : getenv('IP');
+$dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'crime_tips';
+$username = $hasConnUrl ? $connParts['user'] : getenv('C9_USER');
+$password = $hasConnUrl ? $connParts['pass'] : '';
+
+            $bdd=new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
             
             if ($_GET['type']!='')
             {
