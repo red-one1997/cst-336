@@ -15,6 +15,12 @@
   <a href="challenge"> Challenge </a><br></br>
   <a href="assignement2"> Assignement 2</a>
   
+   <h2>Midterm</h2>
+   <a href="midterm/program1.php"> Programme 1</a><br></br>
+   <a href="midterm/program2.php"> Programme 2</a><br></br>
+   <a href="final/2018-05-15/salon.php"> Final</a><br></br>
+   
+  
 
   
 
